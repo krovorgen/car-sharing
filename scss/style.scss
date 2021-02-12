@@ -213,6 +213,8 @@ a {
         background-color: $text-color;
         transition: all 0.5s;
     }
+
+    @extend %roboto-regular;
 }
 
 .rent {
@@ -396,19 +398,28 @@ a {
         @extend %fira-medium;
     }
 
-    &__slider {
+    &__slider .slick-dots {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    &__slider .slick-dots button {
+        margin: 0 5px;
+        line-height: 12px;
+        background-color: $btn-color;
     }
 
     &__item {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 30px;
         border: 1px solid $btn-color;
         padding: 45px 30px;
         width: 270px;
-        height: 300px;
+        min-height: 300px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         text-align: center;
     }
@@ -423,6 +434,99 @@ a {
     &__item-text {
         font-size: 16px;
         line-height: 19px;
+    }
+}
+
+.feedback {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__images {
+        width: 50%;
+        height: 450px;
+    }
+
+    &__form {
+        margin: 0 auto;
+        width: 415px;
+    }
+
+    &__form .btn {
+        padding: 16px 36px;
+    }
+
+    &__images-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+        font-size: 24px;
+        line-height: 29px;
+
+        @extend %fira-medium;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__input {
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba($black-color, 0.1);
+        padding: 20px 0;
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black-color;
+    }
+
+    &__input + .feedback__input {
+        margin-bottom: 50px;
+    }
+}
+
+.footer {
+    padding: 75px 0 25px;
+    background-color: $bg-color;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-item {
+        list-style: none;
+        padding: 0 15px;
+    }
+
+    svg {
+        fill: $btn-color;
+        transition: all 0.5s;
+    }
+
+    svg:hover {
+        fill: #fff;
+        transition: all 0.5s;
     }
 }
 
