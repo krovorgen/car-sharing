@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Car sharing</title>
+        <meta name="title" content="Car sharing in Minsk" />
+        <meta name="description" content="Car sharing in Minsk" />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
 
@@ -19,6 +21,7 @@
                     /></a>
 
                     <nav class="menu">
+                        <button class="menu__btn"></button>
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__list-link">О НАС</a>
@@ -63,7 +66,7 @@
                         <div class="top__slider-item">
                             <img
                                 class="top__slider-images"
-                                src="images/slider/slider-1.png"
+                                src="images/slider/slider-1-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -73,8 +76,9 @@
                         </div>
                         <div class="top__slider-item">
                             <img
-                                class="top__slider-images"
-                                src="images/slider/slider-2.png"
+                                class="top__slider-images lazyload"
+                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                                data-src="images/slider/slider-2-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -84,8 +88,9 @@
                         </div>
                         <div class="top__slider-item">
                             <img
-                                class="top__slider-images"
-                                src="images/slider/slider-3.png"
+                                class="top__slider-images lazyload"
+                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                                data-src="images/slider/slider-3-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -95,8 +100,9 @@
                         </div>
                         <div class="top__slider-item">
                             <img
-                                class="top__slider-images"
-                                src="images/slider/slider-4.png"
+                                class="top__slider-images lazyload"
+                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                                data-src="images/slider/slider-4-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -106,8 +112,9 @@
                         </div>
                         <div class="top__slider-item">
                             <img
-                                class="top__slider-images"
-                                src="images/slider/slider-5.png"
+                                class="top__slider-images lazyload"
+                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                                data-src="images/slider/slider-5-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -117,8 +124,9 @@
                         </div>
                         <div class="top__slider-item">
                             <img
-                                class="top__slider-images"
-                                src="images/slider/slider-6.png"
+                                class="top__slider-images lazyload"
+                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                                data-src="images/slider/slider-6-min.png"
                                 alt="slider"
                             />
                             <p class="top__slider-text">
@@ -177,7 +185,7 @@
             <div class="container">
                 <div class="rent__inner">
                     <div class="rent__content">
-                        <h3 class="rent__title">Условия аренды автомобиля</h3>
+                        <h2 class="rent__title">Условия аренды автомобиля</h2>
                         <p class="rent__text">
                             Мы ценим каждого клиента и предоставляем
                             качественный сервис каршеринга в Киеве.
@@ -245,8 +253,9 @@
                         </li>
                     </ul>
                     <img
-                        class="benefits__images"
-                        src="images/benefits.png"
+                        class="benefits__images lazyload"
+                        src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
+                        data-src="images/benefits-min.png"
                         alt="car"
                     />
                     <div class="benefits__content">
@@ -264,7 +273,8 @@
                             data-fancybox
                             href="https://www.youtube.com/watch?v=XLXckEY22kk"
                             class="video-popup"
-                            >ПОСМОТРЕТЬ <br />
+                            >ПОСМОТРЕТЬ
+                            <br />
                             ПРЕЗЕНТАЦИЮ</a
                         >
                     </div>
@@ -350,8 +360,9 @@
                 <div class="feedback__inner">
                     <div class="feedback__images">
                         <img
-                            class="feedback__images-img"
-                            src="images/questions.png"
+                            class="feedback__images-img lazyload"
+                            src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
+                            data-src="images/questions-min.png"
                             alt="car"
                         />
                     </div>
@@ -471,6 +482,10 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+        <script>
+            lazyload()
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"

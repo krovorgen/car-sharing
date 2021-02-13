@@ -62,6 +62,10 @@ a {
         border-bottom: 1px solid $text-color;
         transition: 0.5s all;
     }
+
+    &__btn {
+        display: none;
+    }
 }
 
 .phone {
@@ -286,6 +290,7 @@ a {
     padding: 100px 0;
 
     &__title {
+        margin-bottom: 20px;
         font-size: 24px;
         line-height: 29px;
 
