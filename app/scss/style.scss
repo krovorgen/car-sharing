@@ -31,14 +31,14 @@ a {
 }
 
 .header {
-    background-color: $bg-color;
-
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100px;
     }
+
+    @extend %bg-color;
 }
 
 .menu {
@@ -73,10 +73,6 @@ a {
 }
 
 .top {
-    /* background-image: url(""); */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     padding-bottom: 100px;
 
     &__header {
@@ -174,6 +170,12 @@ a {
     &__link + .top__link {
         margin-left: 20px;
     }
+
+    /* background-image: url(""); */
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    @extend %bg-image;
 }
 
 .slick {
@@ -214,7 +216,7 @@ a {
     &:hover {
         border: 1px solid $btn-color;
         color: $btn-color;
-        background-color: $text-color;
+        background-color: transparent;
         transition: all 0.5s;
     }
 
@@ -266,7 +268,7 @@ a {
     &__item-num {
         font-size: 96px;
         line-height: 115px;
-        color: rgba($black-color, 0.05);
+        color: rgba($black-color, 0.3);
 
         @extend %fira-medium;
     }
@@ -284,6 +286,8 @@ a {
         line-height: 19px;
         color: $black-color;
     }
+
+    @extend %bg-image;
 }
 
 .benefits {
@@ -364,6 +368,8 @@ a {
     &__list-item:nth-child(5) {
         margin-right: 116px;
     }
+
+    @extend %bg-image;
 }
 
 .video-popup {
@@ -393,7 +399,6 @@ a {
 .reviews {
     padding: 100px 0;
     color: $text-color;
-    background-color: $bg-color;
 
     &__title {
         margin-bottom: 70px;
@@ -440,6 +445,8 @@ a {
         font-size: 16px;
         line-height: 19px;
     }
+
+    @extend %bg-color;
 }
 
 .feedback {
@@ -496,16 +503,18 @@ a {
         font-size: 16px;
         line-height: 19px;
         color: $black-color;
+        background-color: transparent;
     }
 
     &__input + .feedback__input {
         margin-bottom: 50px;
     }
+
+    @extend %bg-image;
 }
 
 .footer {
     padding: 75px 0 25px;
-    background-color: $bg-color;
 
     &__top {
         display: flex;
@@ -533,6 +542,12 @@ a {
         fill: #fff;
         transition: all 0.5s;
     }
+
+    .btn {
+        color: $text-color;
+    }
+
+    @extend %bg-color;
 }
 
 @import 'blocks/media';

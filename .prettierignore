@@ -2,4 +2,5 @@
 /src/sass
 *.min.js
 /src/pages
+*.css
 gulpfile.js

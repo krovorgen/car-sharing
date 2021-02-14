@@ -13,15 +13,26 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" class="logo"
-                        ><img
-                            class="logo__link"
-                            src="images/logo.png"
-                            alt="logo"
-                    /></a>
+                    <a href="#" class="logo">
+                        <picture>
+                            <source
+                                class="logo__link"
+                                srcset="images/logo.webp"
+                                type="image/webp"
+                            />
+                            <img
+                                class="logo__link"
+                                src="images/logo.png"
+                                alt="logo"
+                            />
+                        </picture>
+                    </a>
 
                     <nav class="menu">
-                        <button class="menu__btn"></button>
+                        <button
+                            aria-label="Download"
+                            class="menu__btn"
+                        ></button>
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__list-link">О НАС</a>
@@ -41,8 +52,8 @@
                         </ul>
                     </nav>
 
-                    <a href="tel:+380999999090" class="phone"
-                        >+38 (099) 999 90 90</a
+                    <a href="tel:+375299999999" class="phone"
+                        >+375 (29) 999 99 99</a
                     >
                 </div>
             </div>
@@ -64,73 +75,111 @@
 
                     <div class="top__slider">
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images"
-                                src="images/slider/slider-1-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-1-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-1-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
+
                             <p class="top__slider-text">
-                                <span>1 бел/мин</span> <span>5 мест</span
+                                <span>2 бел/мин</span> <span>5 мест</span
                                 ><span>50 тыс. км пробег</span>
                             </p>
                         </div>
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images lazyload"
-                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                                data-src="images/slider/slider-2-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-2-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-2-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
                             <p class="top__slider-text">
-                                <span>2 бел/мин</span> <span>2 мест</span
+                                <span>1.5 бел/мин</span> <span>2 мест</span
                                 ><span>3 тыс. км пробег</span>
                             </p>
                         </div>
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images lazyload"
-                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                                data-src="images/slider/slider-3-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-3-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-3-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
                             <p class="top__slider-text">
-                                <span>1.7 бел/мин</span> <span>2 мест</span
+                                <span>1.5 бел/мин</span> <span>2 мест</span
                                 ><span>17 тыс. км пробег</span>
                             </p>
                         </div>
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images lazyload"
-                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                                data-src="images/slider/slider-4-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-4-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-4-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
                             <p class="top__slider-text">
-                                <span>2 бел/мин</span> <span>2 мест</span
+                                <span>2.4 бел/мин</span> <span>2 мест</span
                                 ><span>13 тыс. км пробег</span>
                             </p>
                         </div>
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images lazyload"
-                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                                data-src="images/slider/slider-5-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-5-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-5-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
                             <p class="top__slider-text">
-                                <span>1.5 бел/мин</span> <span>5 мест</span
+                                <span>2.2 бел/мин</span> <span>2 мест</span
                                 ><span>21 тыс. км пробег</span>
                             </p>
                         </div>
                         <div class="top__slider-item">
-                            <img
-                                class="top__slider-images lazyload"
-                                src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                                data-src="images/slider/slider-6-min.png"
-                                alt="slider"
-                            />
+                            <picture>
+                                <source
+                                    srcset="images/slider/slider-6-min.webp"
+                                    class="top__slider-images"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="images/slider/slider-6-min.png"
+                                    class="top__slider-images"
+                                    alt="slider"
+                                />
+                            </picture>
                             <p class="top__slider-text">
-                                <span>2 бел/мин</span> <span>2 мест</span
+                                <span>2.4 бел/мин</span> <span>2 мест</span
                                 ><span>2 тыс. км пробег</span>
                             </p>
                         </div>
@@ -252,12 +301,18 @@
                             каждый месяц ТО автомобиля
                         </li>
                     </ul>
-                    <img
-                        class="benefits__images lazyload"
-                        src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw=="
-                        data-src="images/benefits-min.png"
-                        alt="car"
-                    />
+                    <picture>
+                        <source
+                            srcset="images/benefits-min.webp"
+                            class="benefits__images"
+                            type="image/webp"
+                        />
+                        <img
+                            src="images/benefits-min.png"
+                            class="benefits__images"
+                            alt="car"
+                        />
+                    </picture>
                     <div class="benefits__content">
                         <p class="benefits__text">
                             Вы можете выбрать один из 300 наших автомобилей,
@@ -359,12 +414,19 @@
             <div class="container">
                 <div class="feedback__inner">
                     <div class="feedback__images">
-                        <img
-                            class="feedback__images-img lazyload"
-                            src="data:image/gif;base64,R0lGODlhBAADAIAAAP///wAAACH5BAEAAAEALAAAAAAEAAMAAAIDjI9WADs="
-                            data-src="images/questions-min.png"
-                            alt="car"
-                        />
+                        <picture>
+                            <source
+                                srcset="images/questions-min.webp"
+                                class="feedback__images-img"
+                                alt="car"
+                                type="image/webp"
+                            />
+                            <img
+                                src="images/questions-min.png"
+                                class="feedback__images-img"
+                                alt="car"
+                            />
+                        </picture>
                     </div>
                     <form class="feedback__form">
                         <h3 class="feedback__title">Остались вопросы?</h3>
@@ -426,7 +488,10 @@
 
                 <ul class="footer__social">
                     <li class="footer__social-item">
-                        <a class="footer__social-link" href="#">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.facebook.com/"
+                        >
                             <svg
                                 width="30"
                                 height="30"
@@ -440,7 +505,10 @@
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-link" href="#">
+                        <a
+                            class="footer__social-link"
+                            href="http://instagram.com/"
+                        >
                             <svg
                                 width="30"
                                 height="30"
@@ -460,7 +528,10 @@
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-link" href="#">
+                        <a
+                            class="footer__social-link"
+                            href="https://www.youtube.com/"
+                        >
                             <svg
                                 width="30"
                                 height="30"
@@ -482,10 +553,6 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-        <script>
-            lazyload()
-        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
