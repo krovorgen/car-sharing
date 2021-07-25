@@ -1,13 +1,27 @@
 %roboto-regular {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
 }
 %fira-medium {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
 }
 
 $text-color: #fefefe;
-$bg-color: #332208;
+$bg-color: #081933;
 $black-color: #1b1818;
-$btn-color: #c5ac2d;
+$btn-color: #812020;
+%bg-color {
+    /* background-color: $bg-color; */
+    background-image: url('../images/color-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+%bg-image {
+    /* background-color: $bg-color; */
+    background-image: url('../images/main-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
